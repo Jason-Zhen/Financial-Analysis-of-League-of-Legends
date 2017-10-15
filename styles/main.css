@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Nova+Mono|Righteous');
+
+* {
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+html, body {
+    background-color: black;
+    margin: 0;
+}
+
+body {
+    min-height: 200vh;
+}
+
+.fixed {
+    position: fixed;
+}
+
+nav {
+    z-index: 100;
+    position: relative;
+    height: 100vh;
+    background-image: url("../images/stage_background.jpg");
+    background-size: contain;
+    background-color: rebeccapurple;
+    color: whitesmoke;
+}
+
+nav h1 {
+    font-size: 2.3em;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 55%;
+    margin: 0;
+}
+
+nav ul {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 50%;
+    right: 2%;
+    width: 35%;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    margin-bottom: 2%;
+}
+
+nav ul li:hover {
+    list-style: square;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav p {
+    font-size: 0.8em;
+    line-height: 1.6em;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    width: 45%;
+    height: 50%;
+    text-align: justify;
+    overflow: scroll;
+}
+
+nav img {
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    right: 7%;
+    -webkit-user-drag: none;
+}
+
+nav img:hover {
+    cursor: pointer;
+}
+
+main {
+    padding-top: 80px;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game_model {
+    background: radial-gradient(ellipse at center, #217a17 0%,#000000 45%);
+    width: 100%;
+}
+
+#game_model article {
+    background: url("../images/color_swirl_2.png") no-repeat center center;
+    background-size: contain;
+}
+
+#game_model article {
+    margin-bottom: 200px;
+    padding: 30px;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+
+#game_model article p {
+    font-family: "Nova Mono", monospace;
+    padding: 40px;
+    background: rgba(230, 255, 200, 0.4);
+    margin-right: 150px;
+    margin-bottom: 75px;
+    width: 37vw;
+    align-self: flex-end;
+    border-radius: 30px;
+    box-shadow: 4px 4px 20px rgba(112, 128, 144, 0.8);
+    font-size: 0.87em;
+}
+
+#game_model article h2 {
+    font-family: 'Audiowide', sans-serif;
+    font-style: oblique;
+    text-transform: uppercase;
+    color: rgb(79, 194, 52);
+    font-size: 2em;
+}
+
+#simplicity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(ellipse at center, #26517a 0%,#000000 45%);
+    width: 100%;
+    margin-bottom: 200px;
+    color: whitesmoke;
+}
+
+#simplicity article {
+    background: url("../images/color_swirl_1.png") no-repeat center center;
+    background-size: contain;
+    padding: 30px;
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#simplicity article div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    color: rgb(34, 111, 195);
+}
+
+#simplicity h2, h3 {
+    margin: 10px 0;
+    font-family: 'Audiowide', sans-serif;
+}
+
+#simplicity h2 {
+    font-size: 2em;
+}
+
+#simplicity h3 {
+    font-size: 1.6em;
+}
+
+#simplicity article p {
+    font-family: "Nova Mono", monospace;
+    padding: 40px;
+    background: rgba(118, 159, 255, 0.4);
+    margin-left: 265px;
+    margin-bottom: 115px;
+    width: 37vw;
+    align-self: flex-start;
+    border-radius: 30px;
+    box-shadow: -4px 4px 20px rgba(112, 128, 144, 0.8);
+    font-size: 0.87em;
+}
+
+#simplicity div.comparison {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    margin-top: 100px;
+    background-color: rgba(118, 159, 255, 0.4);
+}
+
+#simplicity div.comparison img {
+    height: 100%;
+    display: block;
+}
+
+#simplicity div.comparison dl {
+    font-size: 0.6em;
+    margin-left: 40px;
+}
+
+#simplicity div.comparison dt, dd {
+    font-family: "Nova Mono", monospace;
+}
+
+
+article img {
+    display: block;
+    width: 100%;
+}
