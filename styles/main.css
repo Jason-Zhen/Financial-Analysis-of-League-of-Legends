@@ -156,10 +156,14 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#simplicity div#bushnell {
+    width: 100%;
     background: radial-gradient(ellipse at center, #26517a 0%,#000000 45%);
 }
 
-#simplicity article {
+#simplicity div#bushnell article {
     background: url("../images/color_swirl_1.png") no-repeat center center;
     background-size: contain;
     padding: 30px;
@@ -167,14 +171,14 @@ main {
     width: 100%;
 }
 
-#simplicity article div {
+#simplicity div#bushnell article div {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: rgb(34, 111, 195);
 }
 
-#simplicity article p {
+#simplicity div#bushnell article p {
     background: rgba(118, 159, 255, 0.4);
     margin-left: 300px;
     margin-bottom: 120px;
@@ -187,9 +191,9 @@ main {
 #simplicity div.comparison {
     display: flex;
     align-items: center;
+    margin-top: 100px;
     height: 60vh;
     width: 100vw;
-    margin-top: 100px;
     background-color: rgba(52, 76, 122, 0.6);
 }
 
