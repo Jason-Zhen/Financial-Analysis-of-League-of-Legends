@@ -30,12 +30,16 @@ body {
     border-radius: 30px;
 }
 
-nav {
-    z-index: 100;
+#nav-container {
     position: relative;
+    z-index: 100;
+    background: url("../images/intro/bg.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+nav {
     height: 100vh;
-    background: rebeccapurple url("../images/stage_background.jpg");
-    background-size: contain;
+    background: rgba(0, 0, 0, 0.7);
     color: whitesmoke;
 }
 
@@ -45,56 +49,80 @@ nav h1 {
     position: absolute;
     top: 10%;
     left: 5%;
-    width: 55%;
+    width: 60%;
     margin: 0;
 }
 
-nav ul {
-    font-size: 1.2em;
-    text-transform: uppercase;
-    position: absolute;
-    bottom: 50%;
-    right: 2%;
-    width: 35%;
-    list-style: none;
-    margin: 0;
-}
-
-nav ul li {
-    margin-bottom: 2%;
-}
-
-nav ul li:hover {
-    list-style: square;
-}
-
-nav ul li a {
-    color: whitesmoke;
-    text-decoration: none;
-}
-
-nav p {
-    font-size: 0.8em;
-    line-height: 1.6em;
+nav #what_is_this {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     bottom: 5%;
-    left: 10%;
-    width: 45%;
-    height: 50%;
-    text-align: justify;
-    overflow: scroll;
+    left: 5%;
+    width: 50%;
 }
 
-nav img {
-    display: block;
+nav #what_is_this h2 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+nav #what_is_this p {
+    background-color: rgba(255, 51, 51, 0.4);
+    font-size: 0.8em;
+    line-height: 1.6em;
+    text-align: justify;
+}
+
+/*nav ul {*/
+    /*font-size: 1.2em;*/
+    /*text-transform: uppercase;*/
+    /*position: absolute;*/
+    /*bottom: 36%;*/
+    /*right: 5%;*/
+    /*width: 35%;*/
+    /*list-style: none;*/
+    /*margin: 0;*/
+/*}*/
+
+/*nav ul li {*/
+    /*margin-bottom: 2%;*/
+/*}*/
+
+/*nav ul li:hover {*/
+    /*list-style: square;*/
+/*}*/
+
+/*nav ul li a {*/
+    /*color: whitesmoke;*/
+    /*text-decoration: none;*/
+/*}*/
+
+nav #menu {
     position: absolute;
+    width: 600px;
     bottom: 10%;
-    right: 7%;
+    right: 13%;
+}
+
+nav #menu img {
     -webkit-user-drag: none;
 }
 
-nav img:hover {
+nav #menu img:hover {
     cursor: pointer;
+}
+
+nav #menu {
+ }
+
+nav #disclaimer {
+    font-size: 0.4em;
+    position: absolute;
+    width: 500px;
+    top: 2%;
+    right: 2%;
 }
 
 section {
@@ -118,7 +146,17 @@ section article {
     justify-content: space-between;
 }
 
+section article p {
+    text-shadow: 4px 4px 10px #000;
+}
+
+article img {
+    display: block;
+    width: 100%;
+}
+
 main {
+    z-index: 1;
     padding-top: 80px;
     top: 0;
     width: 100vw;
@@ -190,29 +228,118 @@ main {
 
 #simplicity div.comparison {
     display: flex;
+    flex-direction: column;
     align-items: center;
     margin-top: 100px;
-    height: 60vh;
-    width: 100vw;
-    background-color: rgba(52, 76, 122, 0.6);
+    width: 85vw;
+    background: radial-gradient(ellipse at center, #26517a 0%,#000000 45%);
 }
 
 #simplicity div.comparison img {
-    height: 100%;
-    display: block;
-}
-
-#simplicity div.comparison dl {
-    font-size: 0.6em;
-    margin: 0 40px;
-}
-
-#simplicity div.comparison dt {
-    color: lightsteelblue;
-    font-size: 1.2em;
-}
-
-article img {
-    display: block;
     width: 100%;
+}
+
+#simplicity div.comparison > img {
+    margin-bottom: 20px;
+}
+
+#simplicity div.comparison div#comparison_content {
+    width: 100%;
+    background: url("../images/comparison/comparison_swirl.svg") no-repeat bottom center;
+}
+
+#power_of_memes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#power_of_memes div#meme_intro {
+    margin-bottom: 100px;
+    width: 100%;
+    background: radial-gradient(ellipse at center, #586573 0%,#000000 45%);
+}
+
+#power_of_memes article {
+    background: url("../images/color_swirl_3.png") no-repeat center center;
+    background-size: contain;
+    padding: 30px;
+    justify-content: flex-start;
+}
+
+#power_of_memes article p {
+    background: rgba(90, 108, 140, 0.4);
+    align-self: flex-end;
+    margin-right: 150px;
+    margin-top: 75px;
+    width: 37vw;
+    box-shadow: 4px 4px 20px rgba(112, 128, 144, 0.8);
+    font-size: 0.87em;
+}
+
+#power_of_memes article h2 {
+    color: rgb(157, 172, 228);
+}
+
+#power_of_memes > div:last-of-type {
+    width: 80vw;
+    background: url("../images/memes/meme_color_swirl.png") no-repeat center center;
+    background-size: 85%;
+    /*background: radial-gradient(ellipse at center, #586573 0%,#000000 45%);*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#power_of_memes > div:last-of-type p {
+    margin: 40px 0;
+    background: rgba(90, 108, 140, 0.4);
+    text-align: justify;
+}
+
+#power_of_memes > div:last-of-type > img {
+    border-radius: 30px;
+}
+
+#power_of_memes div div img {
+    border-radius: 8px;
+    height: 400px;
+}
+
+#ikea_effect article {
+    margin-bottom: 100px;
+    background: url("../images/color_swirl_4.png") no-repeat center center;
+    background-size: contain;
+    padding: 30px;
+    justify-content: flex-start;
+}
+
+#ikea_effect article div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 102, 204);
+}
+
+#ikea_effect article p {
+    background: rgba(176, 145, 205, 0.4);
+    align-self: flex-start;
+    margin-left: 350px;
+    margin-top: 100px;
+    width: 37vw;
+    box-shadow: 4px 4px 20px rgba(112, 128, 144, 0.8);
+    font-size: 0.87em;
+}
+
+#ikea_effect div {
+    background: radial-gradient(ellipse at center, #543243 0%,#000000 45%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ikea_effect div p {
+    margin-bottom: 100px;
+    background: rgba(176, 145, 205, 0.4);
+    width: 85vw;
 }
